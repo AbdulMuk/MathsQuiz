@@ -638,6 +638,7 @@ def algebra(cat, type):
             ans = ans.replace(" ", "")
             ans = ans.lstrip("+")
             checkCorrect = checkCorrect or userAns == ans
+            if checkCorrect: break
 
         if checkCorrect:
             print("Correct, well done!")
